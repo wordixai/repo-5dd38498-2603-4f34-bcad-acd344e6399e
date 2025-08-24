@@ -61,7 +61,13 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
-				}
+				},
+				// Photography theme colors
+				'photo-gold': 'hsl(var(--photo-gold))',
+				'photo-cream': 'hsl(var(--photo-cream))',
+				'photo-charcoal': 'hsl(var(--photo-charcoal))',
+				'photo-sage': 'hsl(var(--photo-sage))',
+				'photo-blush': 'hsl(var(--photo-blush))'
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
@@ -84,11 +90,20 @@ export default {
 					to: {
 						height: '0'
 					}
+				},
+				'shimmer': {
+					from: {
+						backgroundPosition: '0 0'
+					},
+					to: {
+						backgroundPosition: '-200% 0'
+					}
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'shimmer': 'shimmer 2s linear infinite'
 			}
 		}
 	},
